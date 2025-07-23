@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cables AMP - DS3</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animación al hacer scroll) -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Botón flotante de WhatsApp -->
+  <a
+    href="https://wa.me/51994428965"
+    class="fixed bottom-6 right-6 bg-black hover:bg-white hover:text-black text-white p-4 rounded-full shadow-lg z-50 transition duration-300"
+    target="_blank"
+    aria-label="Chat en WhatsApp"
+  >
+    <i class="fab fa-whatsapp text-xl"></i>
+  </a>
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div>
+          <img src="static/LOGODS3.PNG" alt="Logo" class="h-10 w-auto" />
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-black focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <nav class="hidden md:flex space-x-6 font-semibold">
+          <a href="#" class="hover:text-gray-700">Switch Catalyst</a>
+          <a href="#" class="hover:text-gray-700">Cisco Business</a>
+          <a href="#" class="hover:text-gray-700">Switch Industrial</a>
+          <a href="#" class="hover:text-gray-700">Aironet</a>
+          <a href="#" class="hover:text-gray-700">CONTACTO</a>
+          <a href="#" class="hover:text-gray-700">Meraki</a>
+          <a href="#" class="hover:text-gray-700">Transceiver</a>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 pb-4">
+        <a href="#" class="block hover:text-gray-700">Switch Catalyst</a>
+        <a href="#" class="block hover:text-gray-700">Cisco Business</a>
+        <a href="#" class="block hover:text-gray-700">Switch Industrial</a>
+        <a href="#" class="block hover:text-gray-700">Aironet</a>
+        <a href="#" class="block hover:text-gray-700">CONTACTO</a>
+        <a href="#" class="block hover:text-gray-700">Meraki</a>
+        <a href="#" class="block hover:text-gray-700">Transceiver</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN 1 -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div data-aos="fade-right">
+      <h2 class="text-xl font-bold mb-2">AMP &gt; Cable de red Cat 6 &gt; 6-1427200-4</h2>
+      <p class="text-lg">
+        Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4.<br><br>
+        Los Cables AMP NetConnect categoría 6 exceden los requerimientos TIA/EIA-568-B.2-1 e ISO / IEC 11801 Clase E. Cumplen con todos los requisitos de rendimiento para aplicaciones como Gigabit Ethernet (1000BASE-TX), 10/100BASE-TX, Token Ring, ATM 155 Mbps, etc.<br><br>
+        Disponible en colores estándar (blanco, gris, azul). Empaque reel-in-box 1000ft sin empalmes. Certificado a 600 MHz y cumple NEC artículo 800 / NFPA 70.
+      </p>
+    </div>
+    <div data-aos="fade-left">
+      <img src="{{ url_for('static', filename='IM1.PNG') }}" alt="Imagen Cable 1" class="w-full shadow-lg">
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div data-aos="fade-right" class="order-2 md:order-1">
+      <img src="{{ url_for('static', filename='IM2.PNG') }}" alt="Imagen Cable 2" class="w-full shadow-lg">
+    </div>
+    <div data-aos="fade-left" class="order-1 md:order-2">
+      <p class="text-lg">
+        Rendimiento verificado a 600 MHz. Entregado en carrete-in-box. Cumple con requisitos de inflamabilidad NEC artículo 800 y NFPA 70, CMR (ANSI / UL 1666, IEC 332-1). El cable horizontal debe ser AMP NETCONNECT número X-1427200-X.
+      </p>
+
+      <div class="mt-6 text-center">
+        <a href="#comprar" class="inline-block bg-black text-white px-6 py-3 rounded-full border border-black hover:bg-transparent hover:text-black transition-colors duration-300">
+          COMPRAR
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTÓN DESCARGAR -->
+  <div class="flex justify-center mt-10" data-aos="fade-up">
+    <a 
+      href="{{ url_for('static', filename='DATOSTECNICOS.pdf') }}" 
+      download
+      class="group inline-flex items-center gap-3 bg-black hover:bg-transparent border-2 border-black text-white hover:text-black text-lg font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-300"
+    >
+      DESCARGAR DATOS TÉCNICOS
+    </a>
+  </div>
+
+  <!-- TABLA DE ESPECIFICACIONES -->
+  <section class="max-w-5xl mx-auto px-6 py-12" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-center">Especificaciones Técnicas</h3>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+        <thead>
+          <tr class="bg-gray-100 text-gray-700 text-left text-sm uppercase tracking-wider">
+            <th class="py-3 px-6 border-b">Parámetro</th>
+            <th class="py-3 px-6 border-b">Valor</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-800 text-sm">
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-6 border-b font-medium">Voltaje</td>
+            <td class="py-3 px-6 border-b">300 VAC o VDC</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-6 border-b font-medium">Velocidad Nominal de Propagación</td>
+            <td class="py-3 px-6 border-b">70%</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-6 border-b font-medium">Temperatura de Operación</td>
+            <td class="py-3 px-6 border-b">–20 °C a 60 °C</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-3 px-6">Temperatura de Almacenamiento</td>
+            <td class="py-3 px-6">–20 °C a 80 °C</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white pt-10 pb-6 px-6 md:px-20">
+    <div class="grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contáctanos</h3>
+        <ul>
+          <li>📞 533-4339</li>
+          <li>📱 994-428-965</li>
+          <li>📱 99653-3223</li>
+          <li>📱 937-514-867</li>
+          <li>📧 netperu100@hotmail.com</li>
+          <li>📍 Lima, PERÚ</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Redes y Contacto</h3>
+        <div class="flex space-x-4 mt-2">
+          <a href="https://facebook.com" target="_blank" class="hover:text-gray-400">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="https://wa.me/51994428965" target="_blank" class="hover:text-gray-400">
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+          <a href="mailto:netperu100@hotmail.com" class="hover:text-gray-400">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Soluciones</h3>
+        <ul class="space-y-1">
+          <li>Access Point</li>
+          <li>Antenas MIMO</li>
+          <li>Antenas de Panel</li>
+          <li>Antenas Sectoriales</li>
+          <li>Cable Pigtail</li>
+          <li>Media Converter</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Soporte</h3>
+        <ul class="space-y-1">
+          <li>Soporte Técnico</li>
+          <li>Acerca de Nosotros</li>
+          <li>Contacto</li>
+          <li>994 428 965</li>
+          <li>996 533 223</li>
+          <li>Horario de Atención:</li>
+          <li>Lunes a Viernes: 9:00 - 18:00</li>
+          <li>Sábados: 9:00 - 13:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-10 border-t border-gray-700 pt-4 text-xs text-gray-400">
+      © 2025 NETPERU. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- AOS Init -->
+  <script>
+    AOS.init({ once: true });
+
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
